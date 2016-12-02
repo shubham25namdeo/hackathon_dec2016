@@ -12,16 +12,17 @@ def jump(start_pt, end_pt, count):
         count += 1
         jump(start_pt=start_pt, end_pt=end_pt, count=count)
 
+
 def main():
-    try:
+    try:  # Expection handling with try-except-else.
         test_num = int(input("Enter the number(1-10) of test Cases:"))
         if test_num < 1 or test_num > 10:
-            raise ValueError
+            raise ValueError  # Raise ValueError as check
         for num in range(test_num):
             start_point = int(input("Enter Starting Point(1-1000): "))
             end_point = int(input("Enter Destination Point(1-1000): "))
             if start_point <= 0 or start_point > 1000 or end_point <= 0 or end_point > 1000:
-                raise ValueError
+                raise ValueError   # Raise ValueError as check
             jump(start_point, end_point, count=0)
 
     except KeyboardInterrupt:

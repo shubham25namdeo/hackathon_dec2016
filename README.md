@@ -38,6 +38,7 @@ Output the minimum steps required to reach destination in a new line.
 Constraints
 1<=t<=10
 1<=st,dt<=1000
+
 SAMPLE INPUT   		SAMPLE OUTPUT
 2
 1 3				3
@@ -46,6 +47,7 @@ SAMPLE INPUT   		SAMPLE OUTPUT
 Explanation
 For First Test case: He can jump to 2nd position and again to 4th position, now he can move to 3rd position by taking a step backward.
 For Second Test case: He can directly take 1 step backward, twice to reach his destination.
+
 -------------------------------------------------------------------------------------------------------------------------
 
 
@@ -67,9 +69,11 @@ First line contain integer N denoting number of 	.
 Next N lines contain two integer Xi and Yi denoting position of ith person.
 Output:
 Output the MINIMUM amount rounded to 2 decimal places CHITVAN have to pay.
+
 Constraints:
 2<=N<=16
 1<=Xi,Yi <= 1000
+
 Example :
 Input:
 4
@@ -77,14 +81,17 @@ Input:
 2 7
 5 8
 6 7
+
 Output:
 8.82
+
 Explanation:
 The pair formed is of (1st,4th) and (2nd,3rd) .
 The distance traveled by 1st person to go to 4th person or vice-versa = 5.6568
 The distance traveled by 2nd person to go to 3rd person or vice-versa = 3.1622
 Total distance or Total money = 5.6568 + 3.1622 = 8.81907
 Rounded to 8.82
+
 SAMPLE INPUT 
 4
 10 3
@@ -96,7 +103,3 @@ SAMPLE OUTPUT
 8.82
 -------------------------------------------------------------------------------------------------------------------------
 
-NOTE:
-Upload the solutions with proper names  and the updated json file and all other dependencies on GIT under the repo by the name hackathon_dec2016
-
-<<<<END>>>>
